@@ -10,14 +10,14 @@ $(document).keypress(function(event) {
         started = true;
         nextSequence()
     }
+});
+
 $(document).on("touchstart", function() {
     if (started === false) {
         $("#level-title").text("Level 1");
         started = true;
         nextSequence();
     }
-});
-
 });
 
 $(".btn").click(function() {
